@@ -1,0 +1,13 @@
+{
+  "name": "les-ames-soeurs",
+  "version": "1.0.0",
+  "description": "Jeu multijoueur de déduction sociale sur navigateur — zéro dépendance",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.js",
+    "sim": "node sim/simulate.js"
+  },
+  "license": "MIT"
+}
