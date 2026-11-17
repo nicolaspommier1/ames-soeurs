@@ -1,0 +1,12 @@
+# Déploiement en un clic sur Render (https://render.com) : adresse https gratuite, donc appli installable.
+services:
+  - type: web
+    name: ames-soeurs
+    runtime: node
+    plan: free
+    buildCommand: echo "Aucune dépendance à installer"
+    startCommand: node server/index.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
